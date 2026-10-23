@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button id="theme-toggle">🌓 Toggle Dark Mode</button>
+
+    <div class="container">
+        <!-- 1. Greeting Section -->
+        <section class="card greeting-section">
+            <h1 id="time-display">00:00:00</h1>
+            <p id="date-display">Day, Month DD, YYYY</p>
+            <h2 id="greeting-display">Good Morning, <span id="user-name">User</span> <button id="edit-name-btn">✏️</button></h2>
+        </section>
+
+        <div class="grid">
+            <!-- 2. Focus Timer Section -->
+            <section class="card timer-section">
+                <h3>Focus Timer</h3>
+                <div id="timer-display">25:00</div>
+                <div class="timer-controls">
+                    <button id="start-timer">Start</button>
+                    <button id="stop-timer">Stop</button>
+                    <button id="reset-timer">Reset</button>
+                </div>
+            </section>
+
+            <!-- 3. To-Do List Section -->
+            <section class="card todo-section">
+                <h3>Tasks</h3>
+                <div class="input-group">
+                    <input type="text" id="task-input" placeholder="Add a new task...">
+                    <button id="add-task-btn">Add</button>
+                </div>
+                <ul id="task-list"></ul>
+            </section>
+        </div>
+
+        <!-- 4. Quick Links Section -->
+        <section class="card links-section">
+            <h3>Quick Links</h3>
+            <div class="input-group">
+                <input type="text" id="link-name" placeholder="Link Name (e.g. Google)">
+                <input type="url" id="link-url" placeholder="URL (e.g. https://google.com)">
+                <button id="add-link-btn">Add Link</button>
+            </div>
+            <div id="links-container"></div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
